@@ -11,6 +11,7 @@ namespace Crowd.Control.GD
     public static class Program
     {
         private static Process gdProcess;
+        private static CursorControl cursor = new CursorControl();
 
         public static void Main(string[] args)
         {
@@ -42,6 +43,8 @@ namespace Crowd.Control.GD
                     MessageBox.Show("Could not find Geometry Dash, please open Geometry dash and relaunch this software.", "Process not found");
                 }
             }
+
+            Write(cursor.GetCursorPosition().ToString());
 
             gdProcess?.WaitForExit();
         }
