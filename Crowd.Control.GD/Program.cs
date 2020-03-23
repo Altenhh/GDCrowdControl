@@ -11,7 +11,6 @@ namespace Crowd.Control.GD
     public static class Program
     {
         private static Process gdProcess;
-        private static CursorControl cursor = new CursorControl();
 
         public static void Main(string[] args)
         {
@@ -44,7 +43,7 @@ namespace Crowd.Control.GD
                 }
             }
 
-            Write(cursor.GetCursorPosition().ToString());
+            Write(CursorControl.GetCursorPosition().ToString());
 
             gdProcess?.WaitForExit();
         }

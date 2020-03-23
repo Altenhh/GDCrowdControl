@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 namespace Crowd.Control.GD
 {
-    public class CursorControl
+    public static class CursorControl
     {
         [DllImport("user32.dll", EntryPoint = "SetCursorPos")]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -19,20 +19,17 @@ namespace Crowd.Control.GD
         [DllImport("user32.dll")]
         private static extern void mouse_event(int dwFlags, int dx, int dy, int dwData, int dwExtraInfo);
 
-        public CursorControl()
-        { }
-
-        public void SetCursorPosition(int x, int y)
+        public static void SetCursorPosition(int x, int y)
         {
             SetCursorPos(x, y);
         }
 
-        public void SetCursorPosition(MousePoint point)
+        public static void SetCursorPosition(MousePoint point)
         {
             SetCursorPos(point.X, point.Y);
         }
 
-        public MousePoint GetCursorPosition()
+        public static MousePoint GetCursorPosition()
         {
             MousePoint currentMousePoint;
             var gotPoint = GetCursorPos(out currentMousePoint);
@@ -43,14 +40,14 @@ namespace Crowd.Control.GD
             return currentMousePoint;
         }
 
-        public void MouseEvent(MouseEventFlags value)
+        public static void MouseEvent(MouseEventFlags value)
         {
             MousePoint position = GetCursorPosition();
 
             mouse_event((int)value, position.X, position.Y, 0, 0);
         }
 
-        public void MouseEvent(MouseEventFlags value, MousePoint position)
+        public static void MouseEvent(MouseEventFlags value, MousePoint position)
         {
             mouse_event((int)value, position.X, position.Y, 0, 0);
         }
