@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Crowd.Control.GD
@@ -19,7 +20,11 @@ namespace Crowd.Control.GD
                 };
 
                 gdProcess = Process.Start(processStartInfo);
-                Console.WriteLine(gdProcess?.Id);
+
+                // doesn't open immediately so we will have to wait a bit
+                Thread.Sleep(TimeSpan.FromSeconds(10));
+
+                Console.WriteLine($"Started process: {gdProcess?.Id} (Geometry Dash)");
             }
             else
             {
