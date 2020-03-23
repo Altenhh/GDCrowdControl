@@ -24,22 +24,34 @@ namespace Crowd.Control.GD
                 // doesn't open immediately so we will have to wait a bit
                 Thread.Sleep(TimeSpan.FromSeconds(10));
 
-                Console.WriteLine($"Started process: {gdProcess?.Id} (Geometry Dash)");
+                Write($"Started process: {gdProcess?.Id} (Geometry Dash)");
             }
             else
             {
                 try
                 {
                     gdProcess = Process.GetProcessesByName("GeometryDash")[0];
-                    Console.WriteLine($"Hooked onto process: {gdProcess.Id} ({gdProcess.MainWindowTitle})");
+                    Write($"Hooked onto process: {gdProcess.Id} ({gdProcess.MainWindowTitle})");
                 }
                 catch
                 {
+                    Write("Failed to hook onto process", ConsoleColor.Red);
                     MessageBox.Show("Could not find Geometry Dash, please open Geometry dash and relaunch this software.", "Process not found");
                 }
             }
 
             gdProcess?.WaitForExit();
+        }
+
+        public static void Write(string message, ConsoleColor col = ConsoleColor.Gray)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(DateTime.Now.ToLongTimeString().PadRight(14));
+
+            Console.ForegroundColor = col;
+            Console.WriteLine(message);
+
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }
