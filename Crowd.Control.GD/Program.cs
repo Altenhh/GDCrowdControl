@@ -16,7 +16,7 @@ namespace Crowd.Control.GD
                 ProcessStartInfo processStartInfo = new ProcessStartInfo(@"C:\Program Files (x86)\Steam\steamapps\common\Geometry Dash\GeometryDash.exe")
                 {
                     WorkingDirectory = @"C:\Program Files (x86)\Steam\steamapps\common\Geometry Dash",
-                    UseShellExecute = false
+                    UseShellExecute  = false
                 };
 
                 gdProcess = Process.Start(processStartInfo);
@@ -46,7 +46,7 @@ namespace Crowd.Control.GD
         public static void Write(string message, ConsoleColor col = ConsoleColor.Gray)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(DateTime.Now.ToLongTimeString().PadRight(14));
+            Console.Write(DateTime.Now.ToLongTimeString().PadRight(12));
 
             Console.ForegroundColor = col;
             Console.WriteLine(message);
