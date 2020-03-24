@@ -3,6 +3,7 @@
 
 using System;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -11,6 +12,9 @@ namespace Crowd.Control.GD
     public static class Program
     {
         private static Process gdProcess;
+
+        [DllImport("user32.dll")]
+        public static extern int SetForegroundWindow(IntPtr hWnd);
 
         public static void Main(string[] args)
         {
@@ -43,7 +47,36 @@ namespace Crowd.Control.GD
                 }
             }
 
-            Write(CursorControl.GetCursorPosition().ToString());
+            Console.WriteLine("Which action do you want to perform?");
+            Console.WriteLine("1) Practice");
+            Console.WriteLine("2) Retry");
+            Console.WriteLine("3) Jump");
+
+            while (true)
+            {
+                int.TryParse(Console.ReadLine(), out var result);
+
+                SetForegroundWindow(gdProcess.MainWindowHandle);
+                Thread.Sleep(TimeSpan.FromSeconds(5));
+
+                switch (result)
+                {
+                    case 1:
+                        GDButtonManager.DoAction(GDButtons.Practice);
+
+                        break;
+
+                    case 2:
+                        GDButtonManager.DoAction(GDButtons.Retry);
+
+                        break;
+
+                    case 3:
+                        GDButtonManager.DoAction(GDButtons.Jump);
+
+                        break;
+                }
+            }
 
             gdProcess?.WaitForExit();
         }

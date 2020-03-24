@@ -1,20 +1,28 @@
 ﻿// Copyright (c) Alten. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
 
+using System;
+using WindowsInput;
+using WindowsInput.Native;
+
 namespace Crowd.Control.GD
 {
     public class GDButtonManager
     {
         public static void DoAction(GDButtons actionToDo)
         {
+            var keyboard = new InputSimulator().Keyboard;
+
             switch (actionToDo)
             {
                 case GDButtons.Retry:
+                    keyboard.KeyPress(VirtualKeyCode.ESCAPE);
                     Click(GDButtonsLocation.Retry);
 
                     break;
 
                 case GDButtons.Practice:
+                    keyboard.KeyPress(VirtualKeyCode.ESCAPE);
                     Click(GDButtonsLocation.Practice);
 
                     break;
@@ -28,10 +36,9 @@ namespace Crowd.Control.GD
             void Click(MousePoint position = new MousePoint(), bool changePosition = true)
             {
                 if (changePosition)
-                    CursorControl.MouseEvent(MouseEventFlags.LeftDown, position);
-                else
-                    CursorControl.MouseEvent(MouseEventFlags.LeftDown);
+                    CursorControl.SetCursorPosition(position);
 
+                CursorControl.MouseEvent(MouseEventFlags.LeftDown);
                 CursorControl.MouseEvent(MouseEventFlags.LeftUp);
             }
         }
