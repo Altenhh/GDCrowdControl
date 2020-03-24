@@ -62,17 +62,17 @@ namespace Crowd.Control.GD
                 switch (result)
                 {
                     case 1:
-                        GDButtonManager.DoAction(GDButtons.Practice);
+                        GDButtonManager.DoAction(GDButtons.Practice, gdProcess);
 
                         break;
 
                     case 2:
-                        GDButtonManager.DoAction(GDButtons.Retry);
+                        GDButtonManager.DoAction(GDButtons.Retry, gdProcess);
 
                         break;
 
                     case 3:
-                        GDButtonManager.DoAction(GDButtons.Jump);
+                        GDButtonManager.DoAction(GDButtons.Jump, gdProcess);
 
                         break;
                 }
