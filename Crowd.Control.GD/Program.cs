@@ -51,6 +51,7 @@ namespace Crowd.Control.GD
             Console.WriteLine("1) Practice");
             Console.WriteLine("2) Retry");
             Console.WriteLine("3) Jump");
+            Console.WriteLine("4) Pause");
 
             while (true)
             {
@@ -73,6 +74,11 @@ namespace Crowd.Control.GD
 
                     case 3:
                         GDButtonManager.DoAction(GDButtons.Jump, gdProcess);
+
+                        break;
+
+                    case 4:
+                        GDButtonManager.DoAction(GDButtons.Pause, gdProcess);
 
                         break;
                 }
