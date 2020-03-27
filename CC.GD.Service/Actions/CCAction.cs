@@ -4,7 +4,7 @@
 using System.Threading;
 using osu.Framework.Bindables;
 
-namespace Crowd.Control.GD.Actions
+namespace CC.GD.Service.Actions
 {
     public abstract class CCAction
     {

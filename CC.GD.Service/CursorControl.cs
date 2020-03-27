@@ -4,7 +4,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Crowd.Control.GD
+namespace CC.GD.Service
 {
     public static class CursorControl
     {

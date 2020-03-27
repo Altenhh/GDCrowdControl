@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Crowd.Control.GD.Actions
+namespace CC.GD.Service.Actions
 {
     public abstract class CCPlugin
     {

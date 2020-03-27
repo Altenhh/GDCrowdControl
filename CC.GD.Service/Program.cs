@@ -8,9 +8,9 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
-using Crowd.Control.GD.Actions;
+using CC.GD.Service.Actions;
 
-namespace Crowd.Control.GD
+namespace CC.GD.Service
 {
     public static class Program
     {

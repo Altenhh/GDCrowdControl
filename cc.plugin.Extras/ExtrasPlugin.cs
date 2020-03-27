@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using cc.plugin.Extras.Actions;
-using Crowd.Control.GD.Actions;
+using CC.GD.Service.Actions;
 
 namespace cc.plugin.Extras
 {

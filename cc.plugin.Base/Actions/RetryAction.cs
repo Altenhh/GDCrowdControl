@@ -2,8 +2,8 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using System.Threading;
-using Crowd.Control.GD;
-using Crowd.Control.GD.Actions;
+using CC.GD.Service;
+using CC.GD.Service.Actions;
 using osu.Framework.Bindables;
 
 namespace cc.plugin.Base.Actions

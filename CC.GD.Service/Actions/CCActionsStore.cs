@@ -8,7 +8,7 @@ using System.Linq;
 using System.Reflection;
 using osu.Framework.Logging;
 
-namespace Crowd.Control.GD.Actions
+namespace CC.GD.Service.Actions
 {
     public class CCActionsStore : IDisposable
     {
