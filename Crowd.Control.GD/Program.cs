@@ -74,7 +74,7 @@ namespace Crowd.Control.GD
                 int.TryParse(Console.ReadLine(), out var result);
                 var action = Activator.CreateInstance(store.AvailableActions.FirstOrDefault(a => a.Id == result)?.GetType()) as CCAction;
 
-                SetForegroundWindow(gdProcess.MainWindowHandle);
+                if (gdProcess != null) SetForegroundWindow(gdProcess.MainWindowHandle);
 
                 Thread.Sleep(TimeSpan.FromSeconds(5));
 
