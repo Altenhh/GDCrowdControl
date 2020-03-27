@@ -2,10 +2,13 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
+using Crowd.Control.GD.Actions;
 
 namespace Crowd.Control.GD
 {
@@ -47,44 +50,36 @@ namespace Crowd.Control.GD
                 }
             }
 
+            var store = new CCActionsStore();
+
             Console.WriteLine("Which action do you want to perform?");
-            Console.WriteLine("1) Practice");
-            Console.WriteLine("2) Retry");
-            Console.WriteLine("3) Jump");
-            Console.WriteLine("4) Pause");
+
+            foreach (var plugin in store.AvailablePlugins)
+            {
+                var pActions = plugin.GetActions();
+                List<CCAction> actions = new List<CCAction>();
+
+                foreach (var action in store.AvailableActions)
+                {
+                    if (pActions.Any(a => a.Name == action.Name))
+                        actions.Add(action);
+                }
+
+                foreach (var action in actions)
+                    Console.WriteLine($"{action.Id}) {action.Name} ({plugin.Name})");
+            }
 
             while (true)
             {
                 int.TryParse(Console.ReadLine(), out var result);
+                var action = Activator.CreateInstance(store.AvailableActions.FirstOrDefault(a => a.Id == result)?.GetType()) as CCAction;
 
                 SetForegroundWindow(gdProcess.MainWindowHandle);
+
                 Thread.Sleep(TimeSpan.FromSeconds(5));
 
-                switch (result)
-                {
-                    case 1:
-                        GDButtonManager.DoAction(GDButtons.Practice);
-
-                        break;
-
-                    case 2:
-                        GDButtonManager.DoAction(GDButtons.Retry);
-
-                        break;
-
-                    case 3:
-                        GDButtonManager.DoAction(GDButtons.Jump);
-
-                        break;
-
-                    case 4:
-                        GDButtonManager.DoAction(GDButtons.Pause);
-
-                        break;
-                }
+                action?.Execute();
             }
-
-            gdProcess?.WaitForExit();
         }
 
         public static void Write(string message, ConsoleColor col = ConsoleColor.Gray)
