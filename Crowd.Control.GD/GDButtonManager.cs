@@ -1,14 +1,13 @@
 ﻿// Copyright (c) Alten. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
 
-using System.Diagnostics;
 using System.Threading;
 
 namespace Crowd.Control.GD
 {
     public class GDButtonManager
     {
-        public static void DoAction(GDButtons actionToDo, Process gdProcess)
+        public static void DoAction(GDButtons actionToDo)
         {
             switch (actionToDo)
             {
