@@ -124,7 +124,17 @@
           </e>
         </e>
         <e p="Textures" t="Include">
-          <e p="logo.png" t="Include" />
+          <e p="Icons" t="Include">
+            <e p="go back.png" t="Include" />
+            <e p="Hold.png" t="Include" />
+            <e p="Jump.png" t="Include" />
+            <e p="Kill.png" t="Include" />
+            <e p="Mute.png" t="Include" />
+            <e p="Pause.png" t="Include" />
+            <e p="Practice.png" t="Include" />
+            <e p="Restart.png" t="Include" />
+            <e p="Speed.png" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Crowd.Control.GD.sln" t="IncludeFlat" />
