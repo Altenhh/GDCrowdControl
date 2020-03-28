@@ -27,6 +27,8 @@ namespace CCGD.Game
                 // You may want to change TargetDrawSize to your "default" resolution, which will decide how things scale and position when using absolute coordinates.
                 TargetDrawSize = new Vector2(1366, 768)
             });
+
+            Name = "CCGD";
         }
 
         [BackgroundDependencyLoader]

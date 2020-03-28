@@ -1,4 +1,5 @@
-﻿using osu.Framework.Allocation;
+﻿using CCGD.Game.Screens;
+using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Screens;
 
@@ -18,6 +19,8 @@ namespace CCGD.Game
 
         protected override void LoadComplete()
         {
+            screenStack.Push(new MainScreen());
+
             base.LoadComplete();
         }
     }
