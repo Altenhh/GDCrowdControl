@@ -1,7 +1,9 @@
 ﻿using CCGD.Game.Screens;
 using osu.Framework.Allocation;
 using osu.Framework.Graphics;
+using osu.Framework.Graphics.Shapes;
 using osu.Framework.Screens;
+using osuTK.Graphics;
 
 namespace CCGD.Game
 {
@@ -12,9 +14,15 @@ namespace CCGD.Game
         [BackgroundDependencyLoader]
         private void load()
         {
-            // Add your top-level game components here.
-            // A screen stack and sample screen has been provided for convenience, but you can replace it if you don't want to use screens.
-            Child = screenStack = new ScreenStack { RelativeSizeAxes = Axes.Both };
+            Children = new Drawable[]
+            {
+                new Box
+                {
+                    Colour = new Color4(0f, 1f, 0f, 1f),
+                    RelativeSizeAxes = Axes.Both
+                },
+                screenStack = new ScreenStack { RelativeSizeAxes = Axes.Both }
+            };
         }
 
         protected override void LoadComplete()

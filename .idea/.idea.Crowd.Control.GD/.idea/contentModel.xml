@@ -113,6 +113,7 @@
         <e p="Program.cs" t="Include" />
         <e p="Visual" t="Include">
           <e p="TestSceneCCGDGame.cs" t="Include" />
+          <e p="TestSceneMainScreen.cs" t="Include" />
         </e>
       </e>
       <e p="CCGD\CCGD.Resources" t="IncludeRecursive">
