@@ -88,6 +88,9 @@
         <e p="CCGD.Game.csproj" t="IncludeRecursive" />
         <e p="CCGDGame.cs" t="Include" />
         <e p="CCGDGameBase.cs" t="Include" />
+        <e p="Graphics" t="Include">
+          <e p="ColourProvider.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
             <e p="netcoreapp3.1" t="Include">

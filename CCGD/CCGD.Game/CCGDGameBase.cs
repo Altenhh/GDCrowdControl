@@ -14,7 +14,7 @@ namespace CCGD.Game
         // the screen scaling for all components including the test browser and framework overlays.
         protected override Container<Drawable> Content { get; }
 
-        private DependencyContainer dependencies;
+        protected DependencyContainer dependencies;
 
         protected override IReadOnlyDependencyContainer CreateChildDependencies(IReadOnlyDependencyContainer parent) =>
             dependencies = new DependencyContainer(base.CreateChildDependencies(parent));
