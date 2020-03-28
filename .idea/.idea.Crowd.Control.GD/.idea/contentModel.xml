@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Noah Rousselle\.nuget\packages\microsoft.testplatform.testhost\16.4.0\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\Noah Rousselle\.nuget\packages\microsoft.testplatform.testhost\16.4.0\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\Noah Rousselle\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.api.dll" t="Include" />
+    <e p="C:\Users\Noah Rousselle\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.dll" t="Include" />
+    <e p="C:\Users\Noah Rousselle\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\Noah Rousselle\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="C:\Users\Noah Rousselle\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Crowd.Control.GD.-406885580.00" t="ExcludeRecursive" />
+    <e p="D:\Projects\Crowd.Control.GD" t="IncludeFlat">
+      <e p="CC.GD.Service" t="IncludeRecursive">
+        <e p="Actions" t="Include">
+          <e p="CCAction.cs" t="Include" />
+          <e p="CCActionsStore.cs" t="Include" />
+          <e p="CCPlugin.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CC.GD.Service.csproj" t="IncludeRecursive" />
+        <e p="CursorControl.cs" t="Include" />
+        <e p="GDButtonsLocation.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="CC.GD.Service.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="cc.plugin.Base" t="IncludeRecursive">
+        <e p="Actions" t="Include">
+          <e p="JumpAction.cs" t="Include" />
+          <e p="PauseAction.cs" t="Include" />
+          <e p="PracticeAction.cs" t="Include" />
+          <e p="RetryAction.cs" t="Include" />
+        </e>
+        <e p="BasePlugin.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="cc.plugin.Base.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="cc.plugin.Base.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="cc.plugin.Extras" t="IncludeRecursive">
+        <e p="Actions" t="Include">
+          <e p="GameRateAction.cs" t="Include" />
+          <e p="HoldAction.cs" t="Include" />
+          <e p="KillAction.cs" t="Include" />
+          <e p="MainMenuAction.cs" t="Include" />
+          <e p="MuteAction.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="cc.plugin.Extras.csproj" t="IncludeRecursive" />
+        <e p="ExtrasPlugin.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="cc.plugin.Extras.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="CCGD\CCGD.Desktop" t="IncludeRecursive">
+        <e p="app.manifest" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CCGD.Desktop.csproj" t="IncludeRecursive" />
+        <e p="game.ico" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="CCGD.Desktop.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="CCGD\CCGD.Game" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CCGD.Game.csproj" t="IncludeRecursive" />
+        <e p="CCGDGame.cs" t="Include" />
+        <e p="CCGDGameBase.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="CCGD.Game.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="CCGD\CCGD.Game.Tests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CCGD.Game.Tests.csproj" t="IncludeRecursive" />
+        <e p="CCGDTestBrowser.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="CCGD.Game.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Visual" t="Include">
+          <e p="TestSceneCCGDGame.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CCGD\CCGD.Resources" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CCGD.Resources.csproj" t="IncludeRecursive" />
+        <e p="CCGDResources.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="CCGD.Resources.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Textures" t="Include">
+          <e p="logo.png" t="Include" />
+        </e>
+      </e>
+      <e p="Crowd.Control.GD.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

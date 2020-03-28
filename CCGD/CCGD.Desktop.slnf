@@ -1,0 +1,11 @@
+﻿{
+  "solution": {
+    "path": "CCGD.sln",
+    "projects": [
+      "CCGD.Desktop\\CCGD.Desktop.csproj",
+      "CCGD.Game\\CCGD.Game.csproj",
+      "CCGD.Game.Tests\\CCGD.Game.Tests.csproj",
+      "CCGD.Resources\\CCGD.Resources.csproj"
+    ]
+  }
+}
