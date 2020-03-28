@@ -12,8 +12,12 @@ namespace CCGD.Game
         // Anything in this class is shared between the test browser and the game implementation.
         // It allows for caching global dependencies that should be accessible to tests, or changing
         // the screen scaling for all components including the test browser and framework overlays.
-
         protected override Container<Drawable> Content { get; }
+
+        private DependencyContainer dependencies;
+
+        protected override IReadOnlyDependencyContainer CreateChildDependencies(IReadOnlyDependencyContainer parent) =>
+            dependencies = new DependencyContainer(base.CreateChildDependencies(parent));
 
         protected CCGDGameBase()
         {
@@ -29,6 +33,16 @@ namespace CCGD.Game
         private void load()
         {
             Resources.AddStore(new DllResourceStore(typeof(CCGDResources).Assembly));
+
+            AddFont(Resources, @"Fonts/Torus-Regular");
+            AddFont(Resources, @"Fonts/Torus-Light");
+            AddFont(Resources, @"Fonts/Torus-SemiBold");
+            AddFont(Resources, @"Fonts/Torus-Bold");
+
+            AddFont(Resources, @"Fonts/Noto-Basic");
+            AddFont(Resources, @"Fonts/Noto-Hangul");
+            AddFont(Resources, @"Fonts/Noto-CJK-Basic");
+            AddFont(Resources, @"Fonts/Noto-CJK-Compatibility");
         }
     }
 }
