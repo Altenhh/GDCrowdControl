@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using osu.Framework.Logging;
 
 namespace CC.GD.Service.Actions
 {
@@ -61,7 +60,7 @@ namespace CC.GD.Service.Actions
             }
             catch (Exception e)
             {
-                Logger.Error(e, $"Could not load plugins from directory {Environment.CurrentDirectory}");
+                Console.WriteLine($"Could not load plugins from directory {Environment.CurrentDirectory}");
             }
         }
 
@@ -78,7 +77,7 @@ namespace CC.GD.Service.Actions
             }
             catch (Exception e)
             {
-                Logger.Error(e, $"Failed to load plugin {filename}");
+                Console.WriteLine($"Failed to load plugin {filename}");
             }
         }
 
@@ -93,7 +92,7 @@ namespace CC.GD.Service.Actions
             }
             catch (Exception e)
             {
-                Logger.Error(e, $"Failed to add plugin {assembly}");
+                Console.WriteLine($"Failed to add plugin {assembly}");
             }
         }
 
