@@ -61,6 +61,7 @@ namespace CC.GD.Service.Actions
             catch (Exception e)
             {
                 Console.WriteLine($"Could not load plugins from directory {Environment.CurrentDirectory}");
+                Console.WriteLine(e);
             }
         }
 
@@ -78,6 +79,7 @@ namespace CC.GD.Service.Actions
             catch (Exception e)
             {
                 Console.WriteLine($"Failed to load plugin {filename}");
+                Console.WriteLine(e);
             }
         }
 
@@ -93,6 +95,7 @@ namespace CC.GD.Service.Actions
             catch (Exception e)
             {
                 Console.WriteLine($"Failed to add plugin {assembly}");
+                Console.WriteLine(e);
             }
         }
 
