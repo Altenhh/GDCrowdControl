@@ -14,18 +14,57 @@
     <e p="C:\Users\Noah Rousselle\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
     <e p="D:\Projects\Crowd.Control.GD" t="IncludeFlat">
       <e p="Application" t="Include" />
+      <e p="CC.GD.Service" t="IncludeRecursive">
+        <e p="Actions" t="Include">
+          <e p="ActionsStore.cs" t="Include" />
+          <e p="CCAction.cs" t="Include" />
+          <e p="CCPlugin.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CC.GD.Service.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CC.Plugin.Base" t="IncludeRecursive">
+        <e p="Actions" t="Include">
+          <e p="JumpAction.cs" t="Include" />
+          <e p="PauseAction.cs" t="Include" />
+          <e p="PracticeAction.cs" t="Include" />
+          <e p="RetryAction.cs" t="Include" />
+        </e>
+        <e p="BasePlugin.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CC.Plugin.Base.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CC.Plugin.Extras" t="IncludeRecursive">
+        <e p="Actions" t="Include">
+          <e p="GameRateAction.cs" t="Include" />
+          <e p="HoldAction.cs" t="Include" />
+          <e p="KillAction.cs" t="Include" />
+          <e p="MainMenuAction.cs" t="Include" />
+          <e p="MuteAction.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CC.Plugin.Extras.csproj" t="IncludeRecursive" />
+        <e p="ExtrasPlugin.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
       <e p="CCGD\CCGD.Desktop" t="IncludeRecursive">
         <e p="app.manifest" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCGD.Desktop.csproj" t="IncludeRecursive" />
         <e p="game.ico" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CCGD.Desktop.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
       </e>
       <e p="CCGD\CCGD.Game" t="IncludeRecursive">
@@ -36,13 +75,7 @@
         <e p="Graphics" t="Include">
           <e p="ColourProvider.cs" t="Include" />
         </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CCGD.Game.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Screens" t="Include">
           <e p="MainScreen.cs" t="Include" />
         </e>
@@ -51,13 +84,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCGD.Game.Tests.csproj" t="IncludeRecursive" />
         <e p="CCGDTestBrowser.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CCGD.Game.Tests.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Visual" t="Include">
           <e p="TestSceneCCGDGame.cs" t="Include" />
@@ -257,13 +284,7 @@
           <e p="Torus-SemiBold.bin" t="Include" />
           <e p="Torus-SemiBold_0.png" t="Include" />
         </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CCGD.Resources.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Textures" t="Include">
           <e p="Icons" t="Include">
             <e p="go back.png" t="Include" />
