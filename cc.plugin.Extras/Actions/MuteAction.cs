@@ -2,7 +2,6 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using CC.GD.Service.Actions;
-using osu.Framework.Bindables;
 
 namespace cc.plugin.Extras.Actions
 {
@@ -10,9 +9,9 @@ namespace cc.plugin.Extras.Actions
     {
         public override string Name => "Mute game";
 
-        public override BindableInt Price => new BindableInt(700);
+        public override int Price => 700;
 
-        public override void Execute()
+        public override void Start()
         {
             throw new System.NotImplementedException();
         }

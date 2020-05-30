@@ -2,7 +2,6 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using CC.GD.Service.Actions;
-using osu.Framework.Bindables;
 
 namespace cc.plugin.Base.Actions
 {
@@ -10,9 +9,9 @@ namespace cc.plugin.Base.Actions
     {
         public override string Name => "Jump";
 
-        public override BindableInt Price => new BindableInt(100);
+        public override int Price => 100;
 
-        public override void Execute()
+        public override void Start()
         {
             Click();
         }

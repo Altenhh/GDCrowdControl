@@ -23,10 +23,9 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CC.GD.Service.csproj" t="IncludeRecursive" />
         <e p="CursorControl.cs" t="Include" />
-        <e p="GDButtonsLocation.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="CC.GD.Service.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -45,7 +44,7 @@
         <e p="cc.plugin.Base.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="cc.plugin.Base.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -64,7 +63,7 @@
         <e p="ExtrasPlugin.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="cc.plugin.Extras.AssemblyInfo.cs" t="Include" />
             </e>
           </e>

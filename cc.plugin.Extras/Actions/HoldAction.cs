@@ -2,7 +2,6 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using CC.GD.Service.Actions;
-using osu.Framework.Bindables;
 
 namespace cc.plugin.Extras.Actions
 {
@@ -10,9 +9,11 @@ namespace cc.plugin.Extras.Actions
     {
         public override string Name => "Hold button";
 
-        public override BindableInt Price => new BindableInt(2000);
+        public override int Price => 2000;
 
-        public override void Execute()
+        public override int Length => 5000;
+
+        public override void Start()
         {
             throw new System.NotImplementedException();
         }

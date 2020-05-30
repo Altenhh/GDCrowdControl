@@ -1,4 +1,4 @@
-// Copyright (c) Alten. Licensed under the MIT Licence.
+﻿// Copyright (c) Alten. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
 
 using System;
@@ -64,7 +64,7 @@ namespace CC.GD.Service
                 }
 
                 foreach (var action in actions)
-                    Console.WriteLine($"{action.Id}) {action.Name} ({action.Price.Value}) [{plugin.Name}]");
+                    Console.WriteLine($"{action.Id}) {action.Name} ({action.Price}) [{plugin.Name}]");
             }
 
             while (true)
@@ -76,7 +76,7 @@ namespace CC.GD.Service
 
                 Thread.Sleep(TimeSpan.FromSeconds(5));
 
-                action?.Execute();
+                action?.Start();
             }
         }
 
