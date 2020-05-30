@@ -1,4 +1,4 @@
-﻿// Copyright (c) Alten. Licensed under the MIT Licence.
+// Copyright (c) Alten. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
 
 using System;
@@ -7,7 +7,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
-using System.Windows.Forms;
 using CC.GD.Service.Actions;
 
 namespace CC.GD.Service
@@ -46,7 +45,6 @@ namespace CC.GD.Service
                 catch
                 {
                     Write("Failed to hook onto process", ConsoleColor.Red);
-                    MessageBox.Show("Could not find Geometry Dash, please open Geometry dash and relaunch this software.", "Process not found");
                 }
             }
 

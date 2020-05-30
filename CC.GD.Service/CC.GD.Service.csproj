@@ -1,9 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
     
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <UseWindowsForms>true</UseWindowsForms>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <Prefer32bit>true</Prefer32bit>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <Prefer32bit>true</Prefer32bit>
     </PropertyGroup>
     
     <ItemGroup>
