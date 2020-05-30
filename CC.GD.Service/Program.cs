@@ -26,7 +26,7 @@ namespace CC.GD.Service
                 ProcessStartInfo processStartInfo = new ProcessStartInfo(@"C:\Program Files (x86)\Steam\steamapps\common\Geometry Dash\GeometryDash.exe")
                 {
                     WorkingDirectory = @"C:\Program Files (x86)\Steam\steamapps\common\Geometry Dash",
-                    UseShellExecute  = false
+                    UseShellExecute = false
                 };
 
                 gdProcess = Process.Start(processStartInfo);
@@ -66,7 +66,7 @@ namespace CC.GD.Service
                 }
 
                 foreach (var action in actions)
-                    Console.WriteLine($"{action.Id}) {action.Name} ({plugin.Name})");
+                    Console.WriteLine($"{action.Id}) {action.Name} ({action.Price.Value}) [{plugin.Name}]");
             }
 
             while (true)

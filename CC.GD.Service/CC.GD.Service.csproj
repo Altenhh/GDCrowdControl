@@ -8,6 +8,7 @@
     
     <ItemGroup>
       <PackageReference Include="InputSimulatorCore" Version="1.0.5" />
+      <PackageReference Include="MemorySharp" Version="1.2.0" />
       <PackageReference Include="ppy.osu.Framework" Version="2020.319.0" />
     </ItemGroup>
     

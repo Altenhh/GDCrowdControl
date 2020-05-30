@@ -7,12 +7,13 @@
     <e p="C:\Users\Noah Rousselle\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.dll" t="Include" />
     <e p="C:\Users\Noah Rousselle\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.dll" t="Include" />
     <e p="C:\Users\Noah Rousselle\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.pdb" t="Include" />
-    <e p="C:\Users\Noah Rousselle\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\Noah Rousselle\.Rider2019.3\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\Noah Rousselle\.Rider2019.3\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\Noah Rousselle\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Noah Rousselle\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Crowd.Control.GD.-406885580.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Crowd.Control.GD.-406885580.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\AppData\Roaming\JetBrains\Rider2020.1\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Noah Rousselle\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
     <e p="D:\Projects\Crowd.Control.GD" t="IncludeFlat">
+      <e p="Application" t="Include" />
       <e p="CC.GD.Service" t="IncludeRecursive">
         <e p="Actions" t="Include">
           <e p="CCAction.cs" t="Include" />
@@ -335,6 +336,7 @@
       </e>
       <e p="Crowd.Control.GD.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Service" t="Include" />
     </e>
   </component>
 </project>
