@@ -14,61 +14,6 @@
     <e p="C:\Users\Noah Rousselle\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
     <e p="D:\Projects\Crowd.Control.GD" t="IncludeFlat">
       <e p="Application" t="Include" />
-      <e p="CC.GD.Service" t="IncludeRecursive">
-        <e p="Actions" t="Include">
-          <e p="CCAction.cs" t="Include" />
-          <e p="CCActionsStore.cs" t="Include" />
-          <e p="CCPlugin.cs" t="Include" />
-        </e>
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="CC.GD.Service.csproj" t="IncludeRecursive" />
-        <e p="CursorControl.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
-            <e p="net472" t="Include">
-              <e p="CC.GD.Service.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-      </e>
-      <e p="cc.plugin.Base" t="IncludeRecursive">
-        <e p="Actions" t="Include">
-          <e p="JumpAction.cs" t="Include" />
-          <e p="PauseAction.cs" t="Include" />
-          <e p="PracticeAction.cs" t="Include" />
-          <e p="RetryAction.cs" t="Include" />
-        </e>
-        <e p="BasePlugin.cs" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="cc.plugin.Base.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
-            <e p="netstandard2.1" t="Include">
-              <e p="cc.plugin.Base.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-      </e>
-      <e p="cc.plugin.Extras" t="IncludeRecursive">
-        <e p="Actions" t="Include">
-          <e p="GameRateAction.cs" t="Include" />
-          <e p="HoldAction.cs" t="Include" />
-          <e p="KillAction.cs" t="Include" />
-          <e p="MainMenuAction.cs" t="Include" />
-          <e p="MuteAction.cs" t="Include" />
-        </e>
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="cc.plugin.Extras.csproj" t="IncludeRecursive" />
-        <e p="ExtrasPlugin.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
-            <e p="netstandard2.1" t="Include">
-              <e p="cc.plugin.Extras.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-      </e>
       <e p="CCGD\CCGD.Desktop" t="IncludeRecursive">
         <e p="app.manifest" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
